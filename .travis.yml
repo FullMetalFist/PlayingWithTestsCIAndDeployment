@@ -1,1 +1,11 @@
 language: objective-c
+branches:
+ only:
+ - master
+osx_image: xcode7.2 #2
+xcode_project: PlayingWithTestsCIAndDeployment.xcodeproj #3
+xcode_workspace:PlayingWithTestsCIAndDeployment.xcode_workspace
+xcode_scheme: PlayingWithTestsCIAndDeployment #4
+xcode_sdk: iphonesimulator7.2 #5
+
+script: xcodebuild -workspace PlayingWithTestsCIAndDeployment.xcworkspace -scheme PlayingWithTestsCIAndDeployment -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
