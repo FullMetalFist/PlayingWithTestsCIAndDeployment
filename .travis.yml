@@ -8,4 +8,4 @@ xcode_workspace: PlayingWithTestsCIAndDeployment.workspace
 xcode_scheme: PlayingWithTestsCIAndDeployment #4
 xcode_sdk: iphonesimulator7.2 #5
 
-script: xcodebuild -workspace PlayingWithTestsCIAndDeployment.xcworkspace -scheme PlayingWithTestsCIAndDeployment -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#script: xctool -workspace PlayingWithTestsCIAndDeployment.xcworkspace -scheme PlayingWithTestsCIAndDeployment -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
